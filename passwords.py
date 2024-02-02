@@ -67,6 +67,9 @@ elif user_answer == "save":
             break
         elif save_another == "y":
             continue
+        else:
+            print("You must entry an validated caracter: 'N' or 'y'.")
+            sys.exit(1)
 else:
     print("Incorrect use. You must write if do you want to read or save.")
 
