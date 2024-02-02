@@ -55,7 +55,7 @@ if user_answer == "read":
 elif user_answer == "save":
     while True:
         data = [
-            input("Which is the label of this login?\n"),
+            input("Which is the label of this login?\n").strip().lower().replace(" ", ""),
             input("Login: "), 
             input("Password: "),
         ]
